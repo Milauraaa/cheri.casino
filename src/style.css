@@ -1,0 +1,413 @@
+:root {
+  --heading-main-font-color: #b3915d;
+  --headind-font-color: #ddbf98;
+  --paragraph-font-color: #e4e0cf;
+}
+body {
+  font-family: "Josefin Sans", sans-serif;
+  background: #011014;
+}
+header nav img {
+  margin-left: 120px;
+  height: 45px;
+}
+header nav {
+  display: flex;
+  border-bottom: 1px var(--heading-main-font-color) solid;
+  padding: 20px;
+}
+header nav ul {
+  list-style: none;
+  margin: 0px 0px 0px 150px;
+}
+header nav ul li {
+  display: inline-block;
+  text-transform: uppercase;
+  margin: 18px;
+  font-size: 13px;
+  font-weight: 400;
+}
+header nav ul li a {
+  color: var(--headind-font-color);
+  text-decoration: none;
+  transition: all 150ms ease-in;
+}
+header nav ul li a:hover {
+  color: white;
+}
+.burger {
+  display: none;
+  cursor: pointer;
+  padding: 6px 8px;
+  border: 1px white solid;
+  border-radius: 5px;
+}
+.burger div {
+  width: 26px;
+  height: 3px;
+  background-color: white;
+  margin: 5px;
+  transition: all 0.3s ease;
+}
+.first-section {
+  margin: 70px 100px;
+  text-align: center;
+}
+.first-section p,
+.bottom-section p {
+  font-size: 20px;
+  color: white;
+  font-weight: 400;
+  line-height: 29px;
+  margin: 50px;
+}
+.first-section h1,
+.bottom-section h2 {
+  color: var(--headind-font-color);
+  font-weight: 700;
+  font-size: 52px;
+}
+.first-section a,
+.bottom-section a {
+  color: white;
+  background-color: #bb8c4d;
+  padding: 18px 90px;
+  border: 3px solid white;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 20px;
+}
+.first-section a:hover,
+.bottom-section a:hover {
+  color: #bb8c4d;
+  background-color: white;
+}
+main .main-photo {
+  width: 900px;
+  display: block;
+  margin: 0 auto;
+}
+main .main-section-block {
+  display: inline-flex;
+  margin: 40px 100px 0px 130px;
+}
+main .main-section-block h6 {
+  font-size: 17px;
+  font-weight: 400;
+  color: white;
+  margin: 10px;
+}
+main .main-section-block div {
+  display: inline-flex;
+  padding: 20px;
+}
+main .main-section-block div .logo-icon {
+  width: 26px;
+  height: 26px;
+  margin: 10px;
+}
+main {
+  margin: 0px 135px 0px 135px;
+}
+main h4,
+h5 {
+  color: var(--heading-main-font-color);
+  font-weight: 700;
+  line-height: 22px;
+}
+main h4 {
+  font-size: 24px;
+}
+main h5 {
+  font-size: 20px;
+}
+main p,
+main ul li {
+  color: var(--paragraph-font-color);
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 24px;
+}
+main .game-photo-block img {
+  width: 156px;
+  height: 138px;
+  border: 2px solid #15373f;
+  display: inline-flex;
+  justify-content: space-evenly;
+  margin: 10px;
+}
+main .game-photo-block a {
+  text-decoration: none;
+}
+main .game-photo-block img:hover {
+  border: 2px solid #227f94;
+  transition: 200ms all ease-in-out;
+}
+main p a,
+main .game-section .bottom-link {
+  color: white;
+  text-decoration: none;
+}
+main p a:hover,
+main .game-section .bottom-link:hover,
+footer a:hover {
+  text-decoration: underline;
+  color: #ffcb3e;
+}
+main .bottom-section {
+  background-color: #222526;
+  text-align: center;
+  padding-top: -10px;
+  padding-bottom: 100px;
+  border-bottom: 0.8px var(--paragraph-font-color) solid;
+  border-top: 0.8px var(--paragraph-font-color) solid;
+}
+main .inline-game-section {
+  display: flex;
+}
+main .game-section {
+  background-color: #0d2228;
+  border: 1px var(--paragraph-font-color) solid;
+  border-radius: 5px;
+  margin: 20px;
+  display: flex;
+  padding: 10px;
+}
+main .game-section .heading-link {
+  color: var(--heading-main-font-color);
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 27px;
+}
+main .game-section h6 {
+  color: #748890;
+  font-size: 12px;
+  font-weight: 400;
+}
+main .game-section img {
+  margin: 10px;
+  width: 150px;
+  height: 107px;
+}
+main .game-section .bottom-link {
+  font-weight: 300;
+}
+footer {
+  text-align: center;
+  margin-top: 50px;
+}
+footer a {
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
+  font-weight: 300;
+}
+footer span {
+  margin: 0px 14px 0px 14px;
+  font-weight: 300;
+  font-size: 24px;
+  color: white;
+}
+@media (max-width: 991px) {
+  body {
+    overflow-x: hidden;
+  }
+  .navLinks {
+    font-size: 12px;
+    position: absolute;
+    right: 0px;
+    height: 92vh;
+    top: 94px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 35%;
+    transform: translateX(100%);
+    transition: transform 0.6s ease;
+    align-items: left;
+  }
+  header nav ul li {
+    opacity: 0;
+  }
+  header nav ul li a {
+    color: green;
+  }
+  header nav ul li a:hover {
+    color: var(--heading-main-font-color);
+  }
+  .burger {
+    display: block;
+    position: relative;
+    top: 0px;
+    right: -500px;
+  }
+  .burger:active,
+  .burger:hover {
+    background: grey;
+  }
+  nav {
+    margin-bottom: 20px;
+  }
+  .first-section h1,
+  .bottom-section h2 {
+    font-size: 48px;
+  }
+  .first-section {
+    margin: 10px;
+  }
+  .first-section a,
+  .bottom-section a {
+    padding: 18px 40px;
+  }
+  main .main-photo {
+    height: auto;
+    max-width: 100%;
+    margin: 60px 0px 0px 0px;
+  }
+  main {
+    margin: 25px;
+  }
+  main .main-section-block {
+    margin: 0px;
+  }
+
+  main .inline-game-section {
+    display: block;
+  }
+}
+.nav-active {
+  transform: translateX(0%);
+}
+.toggle .line1 {
+  transform: rotate(-45deg) translate(-5px, 6px);
+}
+.toggle .line2 {
+  opacity: 0;
+}
+.toggle .line3 {
+  transform: rotate(45deg) translate(-5px, -6px);
+}
+@keyframes navLinkFade {
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+@media (max-width: 897px) {
+  .burger {
+    right: -450px;
+  }
+  .first-section h1,
+  .bottom-section h2 {
+    font-size: 44px;
+  }
+  .first-section a,
+  .bottom-section a {
+    font-size: 16px;
+  }
+  .first-section p,
+  .bottom-section p {
+    font-size: 16px;
+    margin: 10px;
+  }
+  main .main-section-block h6 {
+    font-size: 14px;
+  }
+  main .main-section-block div .logo-icon {
+    width: 20px;
+    height: 20px;
+    margin: 6px;
+  }
+}
+@media (max-width: 797px) {
+  .burger {
+    right: -420px;
+  }
+  header nav img {
+    margin-left: 30px;
+  }
+  .first-section h1,
+  .bottom-section h2 {
+    font-size: 40px;
+  }
+  .first-section a,
+  .bottom-section a {
+    font-size: 14px;
+  }
+  .first-section p,
+  .bottom-section p {
+    font-size: 14px;
+  }
+  main .main-section-block h6 {
+    font-size: 14px;
+  }
+  main .main-section-block div .logo-icon {
+    width: 15px;
+    height: 15px;
+    margin: 3px;
+  }
+}
+@media (max-width: 700px) {
+  .burger {
+    right: -380px;
+  }
+}
+@media (max-width: 625px) {
+  .burger {
+    right: -290px;
+  }
+  main {
+    margin: 15px;
+  }
+  main .main-section-block h6 {
+    display: none;
+  }
+  main .main-section-block div .logo-icon {
+    display: none;
+  }
+  footer a {
+    font-size: 14px;
+  }
+  footer span {
+    font-size: 20px;
+  }
+}
+@media (max-width: 525px) {
+  .burger {
+    right: -200px;
+  }
+
+  main .game-section {
+    display: block;
+  }
+  main .game-section img {
+    display: block;
+    margin: 0 auto;
+    padding-bottom: 10px;
+  }
+  main .first-section h1 {
+    font-size: 34px;
+  }
+  main .bottom-section h2 {
+    font-size: 24px;
+  }
+}
+@media (max-width: 425px) {
+  .burger {
+    right: -150px;
+  }
+  main .first-section h1,
+  main .bottom-section h2 {
+    font-size: 30px;
+  }
+  .first-section a,
+  .bottom-section a {
+    padding: 18px 30px;
+  }
+}
